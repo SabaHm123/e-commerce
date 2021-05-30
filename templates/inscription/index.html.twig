@@ -1,0 +1,81 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello InscriptionController!{% endblock %}
+
+{% block body %}
+<form method="POST" action="inscription.php" class="container">
+    <div class="container">
+<br><br>
+<div col-sm-4>
+    <p>  <h1 class="page-title"> Créer Votre Compte</h1></p>
+</div><br>
+<div class="row top-margin">
+
+          <div class="col-sm-6">
+            <label><b>Numero de carte d'identité national </b><span class="text-danger">*</span></label>
+            <input type="text" class="form-control" name="cin">
+          </div>
+          <div class="col-sm-6">
+            <label><b>Nom </b><span class="text-danger">*</span></label>
+            <input type="text" class="form-control" name="nomC">
+          </div>
+          <div class="col-sm-6">
+            <label><b>Prenom </b><span class="text-danger">*</span></label>
+            <input type="text" class="form-control" name="prenomC">
+          </div>
+            <div class="col-sm-6">
+              <label><b>E-mail </b><span class="text-danger">*</span></label>
+              <input type="email" class="form-control" name="emailC">
+            </div>
+            <div class="col-sm-6">
+              <label><b>Adresse </b><span class="text-danger">*</span></label>
+              <input type="text" class="form-control" name="adresseC">
+            </div>
+            <div class="col-sm-6">
+              <label><b>Numero de la carte </b><span class="text-danger">*</span></label>
+              <input type="text" class="form-control" name="numCarteC">
+            </div>
+            <div class="col-sm-6">
+              <label><b>Code postale </b><span class="text-danger">*</span></label>
+              <input type="text" class="form-control" name="codePostalC">
+            </div>
+            <div class="col-sm-6">
+              <label><b>Numero de telephone </b><span class="text-danger">*</span></label>
+              <input type="text" class="form-control" name="numTelC">
+            </div>
+            <div class="col-sm-6">
+              <label><b>Identifiant </b><span class="text-danger">*</span></label>
+              <input type="text" class="form-control" name="loginC">
+            </div><div class="col-sm-6">
+              <label><b>Mot de passe </b><span class="text-danger">*</span></label>
+              <input type="password" class="form-control" name="passwordC">
+            </div>
+          </div>
+
+          <hr>
+
+          <div class="row">
+
+
+
+          </div>
+    <center>
+      <br>
+      <div class="col-lg-6">
+										<button class="btn btn-action" type="submit" onclick="myFunction()">Inscription</button>
+                    	<button class="btn btn-action" type="reset">Annuler</button>
+									</div>
+
+    </center>
+
+      <br>
+      <script>
+      function myFunction() {
+          alert("Votre inscription a été effectuée avec succès !!");
+      }
+      </script>
+
+
+        </div>
+</form>
+{% endblock %}

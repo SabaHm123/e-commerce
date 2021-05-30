@@ -1,0 +1,76 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+<section id="contact" class="contact">
+      <div class="container">
+
+        <div class="section-title">
+          <span>contactez nous</span>
+          <h2>contactez nous</h2>
+          <p>Nous aimerions recevoir de vos nouvelles. Remplissez le formulaire ci-dessous
+avec des informations sur votre propositions et nous vous recontacterons dès que possible.</p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-6">
+
+            <div class="row">
+              <div class="col-md-12">
+                <div class="info-box">
+                  <i class="bx bx-share-alt"></i>
+                 
+                  
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="info-box mt-4">
+                  <i class="bx bx-envelope"></i>
+                  <h3>Notre Email</h3>
+                  <p>sabahmidi2000@gmail.com </p> </br>
+                  <p>abdelkadersalwa71@gmail.com </p> </br>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="info-box mt-4">
+                  <i class="bx bx-phone-call"></i>
+                  <h3>appelez nous</h3>
+                  <p>+216 52179981</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col-lg-6">
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+              <div class="row">
+                <div class="col-md-6 form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder=" Nom" required>
+                </div>
+                <div class="col-md-6 form-group mt-3 mt-md-0">
+                  <input type="email" class="form-control" name="email" id="email" placeholder=" Votre Email" required>
+                </div>
+              </div>
+              <div class="form-group mt-3">
+                <input type="text" class="form-control" name="subject" id="Objet" placeholder="objet" required>
+              </div>
+              <div class="form-group mt-3">
+                <textarea class="form-control" name="message" rows="6" placeholder="Tapez votre message ici " required></textarea>
+              </div>
+              <div class="my-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div>
+              <div class="text-center"><button type="submit">envoyer le message
+</button></div>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Me Section -->
+
+{% endblock %}
